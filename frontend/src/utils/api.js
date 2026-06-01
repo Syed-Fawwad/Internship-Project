@@ -1,4 +1,5 @@
-const API_URL = 'http://localhost:5000/api';
+const isProduction = import.meta.env.MODE === 'production';
+const API_URL = isProduction ? '/api' : 'http://localhost:5000/api';
 
 const handleResponse = async (response) => {
   const data = await response.json();

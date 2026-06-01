@@ -1,110 +1,88 @@
-# Ecommerce Internship Project
+# Fullstack Ecommerce Project
 
-A modern, responsive ecommerce web application built with React, Vite, and Tailwind CSS.
+A professional, responsive fullstack ecommerce web application built with React, Node.js, Express, and MongoDB.
 
-## Tech Stack
+## 🚀 Tech Stack
 
-- **Frontend**: React 18
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Routing**: React Router DOM
-- **Backend**: Node.js + Express (coming soon)
-- **Database**: MongoDB (coming soon)
+- **Frontend**: React 18, Vite, Tailwind CSS, React Router DOM
+- **Backend**: Node.js, Express, JWT Authentication, bcryptjs
+- **Database**: MongoDB (Atlas)
+- **Deployment**: Configured for Northflank / Heroku Buildpacks
 
-## Project Structure
+## 📂 Project Structure
 
 ```
-frontend/
-├── src/
-│   ├── components/
-│   │   ├── Navbar/
-│   │   │   └── Navbar.jsx
-│   │   ├── Hero/
-│   │   │   └── Hero.jsx
-│   │   ├── ProductCard/
-│   │   │   └── ProductCard.jsx
-│   │   └── Footer/
-│   │       └── Footer.jsx
-│   ├── pages/
-│   │   └── Home.jsx
-│   ├── utils/
-│   │   └── dummyData.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-└── postcss.config.js
+/ (root)
+├── package.json (Monorepo orchestration)
+├── backend/
+│   ├── config/ (DB connection)
+│   ├── controllers/ (Route logic)
+│   ├── models/ (Mongoose schemas)
+│   ├── routes/ (API endpoints)
+│   └── server.js (Main entry point)
+└── frontend/
+    ├── src/ (React source)
+    ├── public/
+    └── index.html
 ```
 
-## Features
+## 🚀 Deployment (Northflank)
 
-- ✅ Responsive modern UI
-- ✅ Clean reusable components
-- ✅ Mobile-first design
-- ✅ Product cards with hover effects
-- ✅ Hero section with CTA
-- ✅ Featured products section
-- ✅ Newsletter subscription
-- ✅ Professional footer
+This project is configured for **Northflank Combined Service** using the **Heroku Buildpack**.
 
-## Getting Started
+### Steps to Deploy:
 
-### Installation
+1. **Create a new Service** on Northflank.
+2. Select **Combined Service**.
+3. Link your **GitHub Repository**.
+4. Choose **Buildpack** (Heroku) as the build method.
+5. Northflank will automatically detect the root `package.json` and run `heroku-postbuild` to build the frontend and install backend dependencies.
 
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
+### Required Environment Variables:
 
-2. Install dependencies:
-```bash
-npm install
-```
+Configure these in the **Environment** tab of your Northflank service:
 
-### Running the Application
+| Variable | Value |
+| :--- | :--- |
+| `NODE_ENV` | `production` |
+| `MONGO_URI` | Your MongoDB Atlas connection string |
+| `JWT_SECRET` | A secure random string for JWT |
+| `PORT` | `8080` (or leave default, Northflank provides this) |
 
-Start the development server:
-```bash
-npm run dev
-```
+## 🛠 Features
 
-The application will open at `http://localhost:3000`
+- ✅ High-Fidelity UI matching design screenshots
+- ✅ Dynamic Product Management (CRUD)
+- ✅ Admin Control Center with User Registry
+- ✅ JWT Authentication & Protected Routes
+- ✅ Shopping Cart with localStorage persistence
+- ✅ Search & Category Filtering
+- ✅ Responsive Design (Mobile, Tablet, Desktop)
 
-### Build for Production
+## 🏁 Getting Started
 
-```bash
-npm run build
-```
+### Local Development
 
-### Preview Production Build
+1. **Backend**:
+   ```bash
+   cd backend
+   npm install
+   npm run dev
+   ```
 
-```bash
-npm run preview
-```
+2. **Frontend**:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
 
-## Pages (Planned)
+3. **Seeding Database**:
+   ```bash
+   cd backend
+   node seeder.js
+   ```
 
-- [x] Home Page
-- [ ] Product Listing
-- [ ] Product Details
-- [ ] Shopping Cart
-- [ ] Login/Register
-- [ ] Admin Dashboard
-- [ ] Contact/About
-
-## Upcoming Features
-
-- Backend API integration
-- User authentication
-- Shopping cart functionality
-- Product filtering and search
-- Admin dashboard
-- Order management
-- Payment integration
-
-## License
+## 📜 License
 
 This project is for internship purposes.
