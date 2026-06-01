@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "WebFetch(domain:www.figma.com)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl *)",
+      "Bash(start http://localhost:3000)"
+    ]
+  }
+}
