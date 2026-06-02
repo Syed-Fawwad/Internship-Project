@@ -184,10 +184,10 @@ const Cart = () => {
           <h2 className="text-xl font-black text-gray-900 mb-8 uppercase tracking-tighter">Saved for later</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
             {[
-              { id: 1, name: 'Canon Camera EOS 2000', price: '998.00', image: '/src/assets/Image/tech/image 33.png', category: 'Tech' },
-              { id: 4, name: 'Smart Watch Pro Series', price: '199.00', image: '/src/assets/Image/tech/8.png', category: 'Tech' },
-              { id: 5, name: 'Modern Laptop Stand', price: '45.00', image: '/src/assets/Image/tech/image 34.png', category: 'Tech' },
-              { id: 2, name: 'GoPro HERO6 4K Action', price: '799.00', image: '/src/assets/Image/tech/6.png', category: 'Tech' },
+              { id: 1, name: 'Canon Camera EOS 2000', price: '998.00', image: '/assets/Image/tech/image 33.png', category: 'Tech' },
+              { id: 4, name: 'Smart Watch Pro Series', price: '199.00', image: '/assets/Image/tech/8.png', category: 'Tech' },
+              { id: 5, name: 'Modern Laptop Stand', price: '45.00', image: '/assets/Image/tech/image 34.png', category: 'Tech' },
+              { id: 2, name: 'GoPro HERO6 4K Action', price: '799.00', image: '/assets/Image/tech/6.png', category: 'Tech' },
             ].map(item => (
               <div key={item.id} className="group cursor-pointer flex flex-col h-full">
                 <Link to={`/product/${item.id}`}>

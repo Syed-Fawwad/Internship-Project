@@ -1,15 +1,15 @@
 const Suppliers = () => {
   const suppliers = [
-    { name: 'Arabic Emirates', site: 'shopname.ae', flag: '/src/assets/Layout1/Image/flags/AE@2x.png' },
-    { name: 'Australia', site: 'shopname.ae', flag: '/src/assets/Layout1/Image/flags/icon.png' }, // icon.png seems to be Aussie flag in some contexts, let me double check or use a placeholder
-    { name: 'United States', site: 'shopname.ae', flag: '/src/assets/Layout1/Image/flags/US@2x.png' },
-    { name: 'Russia', site: 'shopname.ru', flag: '/src/assets/Layout1/Image/flags/RU@2x.png' },
-    { name: 'Italy', site: 'shopname.it', flag: '/src/assets/Layout1/Image/flags/IT@2x.png' },
-    { name: 'Denmark', site: 'denmark.com.dk', flag: '/src/assets/Layout1/Image/flags/DK@2x.png' },
-    { name: 'France', site: 'shopname.com.fr', flag: '/src/assets/Layout1/Image/flags/FR@2x.png' },
-    { name: 'Arabic Emirates', site: 'shopname.ae', flag: '/src/assets/Layout1/Image/flags/AE@2x.png' },
-    { name: 'China', site: 'shopname.ae', flag: '/src/assets/Layout1/Image/flags/CN@2x.png' },
-    { name: 'Great Britain', site: 'shopname.co.uk', flag: '/src/assets/Layout1/Image/flags/GB@2x.png' },
+    { name: 'Arabic Emirates', site: 'shopname.ae', flag: '/assets/Layout1/Image/flags/AE@2x.png' },
+    { name: 'Australia', site: 'shopname.ae', flag: '/assets/Layout1/Image/flags/icon.png' }, // icon.png seems to be Aussie flag in some contexts, let me double check or use a placeholder
+    { name: 'United States', site: 'shopname.ae', flag: '/assets/Layout1/Image/flags/US@2x.png' },
+    { name: 'Russia', site: 'shopname.ru', flag: '/assets/Layout1/Image/flags/RU@2x.png' },
+    { name: 'Italy', site: 'shopname.it', flag: '/assets/Layout1/Image/flags/IT@2x.png' },
+    { name: 'Denmark', site: 'denmark.com.dk', flag: '/assets/Layout1/Image/flags/DK@2x.png' },
+    { name: 'France', site: 'shopname.com.fr', flag: '/assets/Layout1/Image/flags/FR@2x.png' },
+    { name: 'Arabic Emirates', site: 'shopname.ae', flag: '/assets/Layout1/Image/flags/AE@2x.png' },
+    { name: 'China', site: 'shopname.ae', flag: '/assets/Layout1/Image/flags/CN@2x.png' },
+    { name: 'Great Britain', site: 'shopname.co.uk', flag: '/assets/Layout1/Image/flags/GB@2x.png' },
   ]
 
   return (

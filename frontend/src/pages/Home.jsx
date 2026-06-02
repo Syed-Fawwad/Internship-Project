@@ -11,25 +11,25 @@ import { api } from '../utils/api'
 
 // Stable mock data for homepage restoration
 const MOCK_TECH = [
-  { id: 1, name: 'Smart watches', price: '19', image: '/src/assets/Image/tech/image 23.png' },
-  { id: 2, name: 'Cameras', price: '89', image: '/src/assets/Image/tech/image 32.png' },
-  { id: 3, name: 'Headphones', price: '10', image: '/src/assets/Image/tech/8.png' },
-  { id: 4, name: 'Smartphones', price: '90', image: '/src/assets/Image/tech/image 33.png' },
-  { id: 5, name: 'Gaming set', price: '35', image: '/src/assets/Image/tech/6.png' },
-  { id: 6, name: 'Laptops & PC', price: '340', image: '/src/assets/Image/tech/image 29.png' },
-  { id: 7, name: 'Tablets', price: '19', image: '/src/assets/Image/tech/6.png' },
-  { id: 8, name: 'Accessories', price: '240', image: '/src/assets/Image/tech/image 85.png' },
+  { id: 1, name: 'Smart watches', price: '19', image: '/assets/Image/tech/image 23.png' },
+  { id: 2, name: 'Cameras', price: '89', image: '/assets/Image/tech/image 32.png' },
+  { id: 3, name: 'Headphones', price: '10', image: '/assets/Image/tech/8.png' },
+  { id: 4, name: 'Smartphones', price: '90', image: '/assets/Image/tech/image 33.png' },
+  { id: 5, name: 'Gaming set', price: '35', image: '/assets/Image/tech/6.png' },
+  { id: 6, name: 'Laptops & PC', price: '340', image: '/assets/Image/tech/image 29.png' },
+  { id: 7, name: 'Tablets', price: '19', image: '/assets/Image/tech/6.png' },
+  { id: 8, name: 'Accessories', price: '240', image: '/assets/Image/tech/image 85.png' },
 ]
 
 const MOCK_CLOTHING = [
-  { id: 11, name: 'Soft chairs', price: '19', image: '/src/assets/Image/interior/8.png' },
-  { id: 12, name: 'Sofa & chair', price: '19', image: '/src/assets/Image/interior/7.png' },
-  { id: 13, name: 'Kitchen dishes', price: '19', image: '/src/assets/Image/interior/image 93.png' },
-  { id: 14, name: 'Smart watches', price: '19', image: '/src/assets/Image/interior/1.png' },
-  { id: 15, name: 'Kitchen mixer', price: '100', image: '/src/assets/Image/interior/image 89.png' },
-  { id: 16, name: 'Blenders', price: '39', image: '/src/assets/Image/interior/9.png' },
-  { id: 17, name: 'Home appliance', price: '19', image: '/src/assets/Image/interior/3.png' },
-  { id: 18, name: 'Coffee maker', price: '10', image: '/src/assets/Image/interior/image 93.png' },
+  { id: 11, name: 'Soft chairs', price: '19', image: '/assets/Image/interior/8.png' },
+  { id: 12, name: 'Sofa & chair', price: '19', image: '/assets/Image/interior/7.png' },
+  { id: 13, name: 'Kitchen dishes', price: '19', image: '/assets/Image/interior/image 93.png' },
+  { id: 14, name: 'Smart watches', price: '19', image: '/assets/Image/interior/1.png' },
+  { id: 15, name: 'Kitchen mixer', price: '100', image: '/assets/Image/interior/image 89.png' },
+  { id: 16, name: 'Blenders', price: '39', image: '/assets/Image/interior/9.png' },
+  { id: 17, name: 'Home appliance', price: '19', image: '/assets/Image/interior/3.png' },
+  { id: 18, name: 'Coffee maker', price: '10', image: '/assets/Image/interior/image 93.png' },
 ]
 
 const Home = () => {
@@ -64,13 +64,13 @@ const Home = () => {
       
       <CategorySection
         title={`Home and\noutdoor`}
-        bannerImage="/src/assets/Image/backgrounds/Group 969.png"
+        bannerImage="/assets/Image/backgrounds/Group 969.png"
         items={homeAndOutdoorItems}
       />
       
       <CategorySection
         title={`Consumer\nelectronics and\ngadgets`}
-        bannerImage="/src/assets/Image/backgrounds/image 98.png"
+        bannerImage="/assets/Image/backgrounds/image 98.png"
         items={electronicsItems}
       />
       

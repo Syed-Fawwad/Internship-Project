@@ -26,7 +26,12 @@ const app = express();
 app.use(express.json());
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+  origin: process.env.NODE_ENV === 'production' 
+    ? [/\.vercel\.app$/, 'http://localhost:3001'] 
+    : ['http://localhost:3001', 'http://localhost:3000'],
+  credentials: true
+}));
 
 // Set security headers
 app.use(helmet({

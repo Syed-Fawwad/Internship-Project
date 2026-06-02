@@ -5,7 +5,7 @@ const Inquiry = () => {
         <div className="relative rounded-lg overflow-hidden min-h-[400px] flex items-center">
           {/* Background Image */}
           <img
-            src="/src/assets/Image/backgrounds/Group 982.png"
+            src="/assets/Image/backgrounds/Group 982.png"
             alt="Warehouse Background"
             className="absolute inset-0 w-full h-full object-cover"
           />

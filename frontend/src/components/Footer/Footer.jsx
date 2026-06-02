@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo and Info */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6">
-              <img src="/src/assets/Layout/Brand/logo-colored.png" alt="Brand" className="h-9 md:h-10" />
+              <img src="/assets/Layout/Brand/logo-colored.png" alt="Brand" className="h-9 md:h-10" />
             </Link>
             <p className="text-gray-500 mb-8 max-w-xs leading-relaxed font-medium">
               Your premium destination for global trade, high-quality electronics, and sustainable style.
@@ -74,7 +74,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2 cursor-pointer group">
-              <img src="/src/assets/Layout1/Image/flags/US@2x.png" alt="English" className="h-3 w-5 object-cover rounded-sm shadow-sm" />
+              <img src="/assets/Layout1/Image/flags/US@2x.png" alt="English" className="h-3 w-5 object-cover rounded-sm shadow-sm" />
               <span className="text-gray-600 text-xs font-black uppercase tracking-widest group-hover:text-primary transition-colors">English</span>
               <svg className="w-4 h-4 text-gray-400 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />

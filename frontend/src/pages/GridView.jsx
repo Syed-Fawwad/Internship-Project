@@ -9,15 +9,15 @@ import { api } from '../utils/api'
 
 // Stable mock data for Grid View restoration
 const MOCK_GRID_PRODUCTS = [
-  { id: 1, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', originalPrice: '112.00', rating: 4.5, image: '/src/assets/Image/tech/image 33.png' },
-  { id: 2, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/image 34.png' },
-  { id: 3, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/6.png' },
-  { id: 4, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/8.png' },
-  { id: 5, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/image 86.png' },
-  { id: 6, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/image 33.png' },
-  { id: 7, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/image 34.png' },
-  { id: 8, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/6.png' },
-  { id: 9, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/src/assets/Image/tech/8.png' },
+  { id: 1, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', originalPrice: '112.00', rating: 4.5, image: '/assets/Image/tech/image 33.png' },
+  { id: 2, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/image 34.png' },
+  { id: 3, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/6.png' },
+  { id: 4, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/8.png' },
+  { id: 5, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/image 86.png' },
+  { id: 6, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/image 33.png' },
+  { id: 7, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/image 34.png' },
+  { id: 8, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/6.png' },
+  { id: 9, name: 'GoPro HERO6 4K Action Camera - Black', price: '99.50', rating: 4.5, image: '/assets/Image/tech/8.png' },
 ]
 
 const GridView = () => {

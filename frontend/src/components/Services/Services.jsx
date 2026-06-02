@@ -2,7 +2,7 @@ const Services = () => {
   const services = [
     {
       title: 'Source from Industry Hubs',
-      image: '/src/assets/Image/backgrounds/Mask group.png',
+      image: '/assets/Image/backgrounds/Mask group.png',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -11,7 +11,7 @@ const Services = () => {
     },
     {
       title: 'Customize Your Products',
-      image: '/src/assets/Image/backgrounds/Group 969.png',
+      image: '/assets/Image/backgrounds/Group 969.png',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -20,7 +20,7 @@ const Services = () => {
     },
     {
       title: 'Fast, reliable shipping by ocean or air',
-      image: '/src/assets/Image/backgrounds/image 106.png',
+      image: '/assets/Image/backgrounds/image 106.png',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -29,7 +29,7 @@ const Services = () => {
     },
     {
       title: 'Product monitoring and inspection',
-      image: '/src/assets/Image/backgrounds/image 107.png',
+      image: '/assets/Image/backgrounds/image 107.png',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />

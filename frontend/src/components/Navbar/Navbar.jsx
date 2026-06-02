@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center flex-shrink-0">
           <img
-            src="/src/assets/Layout/Brand/logo-colored.png"
+            src="/assets/Layout/Brand/logo-colored.png"
             alt="Brand Logo"
             className="h-10 w-auto"
           />
@@ -174,7 +174,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center cursor-pointer hover:text-primary transition-colors">
               <span className="font-medium text-gray-900 mr-2">Ship to</span>
-              <img src="/src/assets/Layout1/Image/flags/DE@2x.png" alt="Germany" className="h-4 w-6 object-cover" />
+              <img src="/assets/Layout1/Image/flags/DE@2x.png" alt="Germany" className="h-4 w-6 object-cover" />
               <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>

@@ -4,11 +4,11 @@ import { api } from '../../utils/api'
 
 // Fallback deals for UI stability
 const MOCK_DEALS = [
-  { id: 8, name: 'Smart watches', discount: '-25%', image: '/src/assets/Image/tech/image 23.png' },
-  { id: 5, name: 'Laptops', discount: '-15%', image: '/src/assets/Image/tech/image 29.png' },
-  { id: 2, name: 'GoPro cameras', discount: '-40%', image: '/src/assets/Image/tech/6.png' },
-  { id: 4, name: 'Headphones', discount: '-25%', image: '/src/assets/Image/tech/8.png' },
-  { id: 1, name: 'Canon cameras', discount: '-25%', image: '/src/assets/Image/tech/image 32.png' },
+  { id: 8, name: 'Smart watches', discount: '-25%', image: '/assets/Image/tech/image 23.png' },
+  { id: 5, name: 'Laptops', discount: '-15%', image: '/assets/Image/tech/image 29.png' },
+  { id: 2, name: 'GoPro cameras', discount: '-40%', image: '/assets/Image/tech/6.png' },
+  { id: 4, name: 'Headphones', discount: '-25%', image: '/assets/Image/tech/8.png' },
+  { id: 1, name: 'Canon cameras', discount: '-25%', image: '/assets/Image/tech/image 32.png' },
 ]
 
 const Deals = () => {

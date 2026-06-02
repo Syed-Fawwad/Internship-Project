@@ -15,7 +15,7 @@ const MOCK_LIST_PRODUCTS = [
     price: '998.00',
     originalPrice: '1128.00',
     rating: 4.5,
-    image: '/src/assets/Image/tech/image 33.png',
+    image: '/assets/Image/tech/image 33.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
@@ -23,7 +23,7 @@ const MOCK_LIST_PRODUCTS = [
     name: 'GoPro HERO6 4K Action Camera - Black',
     price: '998.00',
     rating: 4.8,
-    image: '/src/assets/Image/tech/6.png',
+    image: '/assets/Image/tech/6.png',
     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
   },
   {
@@ -31,7 +31,7 @@ const MOCK_LIST_PRODUCTS = [
     name: 'GoPro HERO6 4K Action Camera - Black',
     price: '998.00',
     rating: 4.8,
-    image: '/src/assets/Image/tech/8.png',
+    image: '/assets/Image/tech/8.png',
     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
   },
   {
@@ -39,7 +39,7 @@ const MOCK_LIST_PRODUCTS = [
     name: 'GoPro HERO6 4K Action Camera - Black',
     price: '998.00',
     rating: 4.8,
-    image: '/src/assets/Image/tech/image 34.png',
+    image: '/assets/Image/tech/image 34.png',
     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
   },
   {
@@ -48,7 +48,7 @@ const MOCK_LIST_PRODUCTS = [
     price: '998.00',
     originalPrice: '1128.00',
     rating: 4.8,
-    image: '/src/assets/Image/tech/image 86.png',
+    image: '/assets/Image/tech/image 86.png',
     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
   },
 ]

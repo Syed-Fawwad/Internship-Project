@@ -37,7 +37,7 @@ const Hero = () => {
           {/* Main Banner */}
           <div className="flex-grow relative rounded-lg overflow-hidden h-[400px]">
             <img
-              src="/src/assets/Image/backgrounds/Banner-board-800x420 2.png"
+              src="/assets/Image/backgrounds/Banner-board-800x420 2.png"
               alt="Latest trending Electronic items"
               className="w-full h-full object-cover"
             />
