@@ -7,12 +7,11 @@ WORKDIR /app
 # Copy root package.json
 COPY package.json ./
 
-# Copy backend and frontend folders
+# Copy ONLY the backend folder
 COPY backend/ ./backend/
-COPY frontend/ ./frontend/
 
-# Install all dependencies and build the frontend
-RUN npm run build
+# Install backend dependencies
+RUN npm run install-all
 
 # Expose the port (Hugging Face uses 7860 by default)
 EXPOSE 7860
@@ -21,5 +20,5 @@ EXPOSE 7860
 ENV NODE_ENV=production
 ENV PORT=7860
 
-# Start the application
+# Start the API
 CMD ["npm", "start"]
