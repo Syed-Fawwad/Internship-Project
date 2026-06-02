@@ -11,7 +11,7 @@ COPY package.json ./
 COPY backend/ ./backend/
 
 # Install backend dependencies
-RUN npm run install-all
+RUN npm run install-backend
 
 # Expose the port (Hugging Face uses 7860 by default)
 EXPOSE 7860
