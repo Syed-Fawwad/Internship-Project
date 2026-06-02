@@ -4,6 +4,13 @@ const dotenv = require('dotenv');
 const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
+const crypto = require('crypto');
+
+// Polyfill global crypto for Node 18 (required by MongoDB driver)
+if (!global.crypto) {
+  global.crypto = crypto;
+}
+
 const connectDB = require('./config/db');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 
