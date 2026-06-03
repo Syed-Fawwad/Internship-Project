@@ -34,10 +34,10 @@ const RelatedProducts = ({ currentProduct }) => {
       <h2 className="text-xl font-bold text-gray-900 mb-6 tracking-tight uppercase text-sm">Related products</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {relatedProducts.map((product) => (
-          <Link key={product._id} to={`/product/${product._id}`} className="group block">
+          <Link key={product._id} to={`/product/${product._id}`} className="group block text-left">
             <div className="bg-gray-100 rounded-lg p-3 aspect-square flex items-center justify-center mb-2 group-hover:bg-gray-200 transition-colors border border-gray-100">
               <img 
-                src={product.image} 
+                src={api.getImageUrl(product.image)} 
                 alt={product.name} 
                 className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300" 
               />

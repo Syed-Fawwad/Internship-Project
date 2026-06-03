@@ -55,7 +55,7 @@ const Recommended = () => {
             >
               <div className="aspect-square flex items-center justify-center mb-4 overflow-hidden">
                 <img 
-                  src={item.image} 
+                  src={api.getImageUrl(item.image)} 
                   alt={item.name} 
                   className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" 
                 />

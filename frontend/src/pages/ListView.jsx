@@ -67,7 +67,7 @@ const ListView = () => {
         const res = await api.getProducts(query)
         // API returns array directly
         if (res && Array.isArray(res) && res.length > 0) {
-          setProducts(res.map(p => ({ ...p, id: p._id })))
+          setProducts(res.map(p => ({ ...p, id: p._id, image: api.getImageUrl(p.image) })))
         }
       } catch (error) {
         console.warn('Backend API not available, using mock data for List View')

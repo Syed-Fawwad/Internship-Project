@@ -29,6 +29,14 @@ const handleResponse = async (response) => {
 };
 
 export const api = {
+  // Image URL helper
+  getImageUrl: (path) => {
+    if (!path) return '';
+    if (path.startsWith('http')) return path;
+    // Fix common migration paths
+    return path.replace('/src/assets/', '/assets/');
+  },
+
   // Products
   getProducts: async (params = '') => {
     const response = await fetch(`${API_URL}/products?${params}`);

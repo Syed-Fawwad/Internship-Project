@@ -71,7 +71,7 @@ const Deals = () => {
                 className="p-4 border-r border-gray-100 last:border-r-0 flex flex-col items-center text-center hover:bg-gray-50 transition-colors cursor-pointer group"
               >
                 <div className="w-32 h-32 mb-4 flex items-center justify-center overflow-hidden">
-                  <img src={deal.image} alt={deal.name} className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+                  <img src={api.getImageUrl(deal.image)} alt={deal.name} className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <h3 className="text-sm text-gray-800 mb-2 line-clamp-1 group-hover:text-primary transition-colors">{deal.name}</h3>
                 <span className="bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs font-bold">

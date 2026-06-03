@@ -34,7 +34,7 @@ const GridView = () => {
         const res = await api.getProducts(query)
         // API returns array directly
         if (res && Array.isArray(res) && res.length > 0) {
-          setProducts(res.map(p => ({ ...p, id: p._id })))
+          setProducts(res.map(p => ({ ...p, id: p._id, image: api.getImageUrl(p.image) })))
         }
       } catch (error) {
         console.warn('Backend API not available, using mock data for Grid View')
@@ -62,7 +62,7 @@ const GridView = () => {
           {/* Main Content */}
           <main className="flex-grow">
             {/* Header */}
-            <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm text-left">
               <div className="flex items-center gap-2 text-gray-900">
                 <span>{products.length} items in</span>
                 <span className="font-bold">{category}</span>
