@@ -1,6 +1,10 @@
 const rawApiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
-// Normalize URL: remove trailing slash if present
-const API_URL = rawApiUrl.endsWith('/') ? rawApiUrl.slice(0, -1) : rawApiUrl;
+// Normalize URL: remove trailing slash, and ensure it ends with /api
+let normalizedUrl = rawApiUrl.replace(/\/$/, '');
+if (!normalizedUrl.endsWith('/api')) {
+  normalizedUrl += '/api';
+}
+const API_URL = normalizedUrl;
 
 const handleResponse = async (response) => {
   const contentType = response.headers.get('content-type');
