@@ -216,7 +216,7 @@ const AdminDashboard = () => {
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-5">
                         <div className="w-14 h-14 border-2 border-gray-50 rounded-2xl p-2 bg-white flex-shrink-0 shadow-sm group-hover:shadow-md transition-all duration-500 overflow-hidden">
-                          <img src={product.image} alt={product.name} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
+                          <img src={api.getImageUrl(product.image)} alt={product.name} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
                         </div>
                         <div className="flex flex-col">
                           <span className="font-black text-gray-900 text-base leading-tight line-clamp-1">{product.name}</span>
