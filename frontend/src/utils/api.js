@@ -1,9 +1,25 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const rawApiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+// Normalize URL: remove trailing slash if present
+const API_URL = rawApiUrl.endsWith('/') ? rawApiUrl.slice(0, -1) : rawApiUrl;
 
 const handleResponse = async (response) => {
-  const data = await response.json();
+  const contentType = response.headers.get('content-type');
+  let data;
+  
+  if (contentType && contentType.includes('application/json')) {
+    data = await response.json();
+  } else {
+    // Handle non-json responses (like 404 HTML pages from Railway)
+    if (!response.ok) {
+      throw new Error(`Server Error: ${response.status} ${response.statusText}`);
+    }
+    data = await response.text();
+    return data;
+  }
+
   if (!response.ok) {
-    throw new Error(data.error || 'Something went wrong');
+    // Check for both 'error' (custom) and 'message' (standard error middleware)
+    throw new Error(data.error || data.message || 'Something went wrong');
   }
   return data;
 };

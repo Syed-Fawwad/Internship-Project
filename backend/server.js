@@ -11,11 +11,16 @@ if (!global.crypto) {
   global.crypto = crypto;
 }
 
+// Load env vars from absolute path
+dotenv.config({ path: path.join(__dirname, '.env') });
+
 const connectDB = require('./config/db');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 
-// Load env vars from absolute path
-dotenv.config({ path: path.join(__dirname, '.env') });
+// Validate critical env vars
+if (!process.env.JWT_SECRET) {
+  console.warn('WARNING: JWT_SECRET is not defined. Authentication will fail.');
+}
 
 // Connect to database
 connectDB();
@@ -26,10 +31,24 @@ const app = express();
 app.use(express.json());
 
 // Enable CORS
+const allowedOrigins = [
+  'https://internship-project-navy.vercel.app',
+  'http://localhost:3001',
+  'http://localhost:3000'
+];
+
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? [/\.vercel\.app$/, 'http://localhost:3001'] 
-    : ['http://localhost:3001', 'http://localhost:3000'],
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    const isVercel = /\.vercel\.app$/.test(origin);
+    if (allowedOrigins.indexOf(origin) !== -1 || isVercel) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
