@@ -62,23 +62,14 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
 // Mount routes
 app.use('/api/products', require('./routes/productRoutes'));
 app.use('/api/auth', require('./routes/authRoutes'));
-
-// Static folder for frontend in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/dist')));
-
-  // Catch-all route to serve index.html
-  app.get('/*any', (req, res) =>
-    res.sendFile(path.resolve(__dirname, '..', 'frontend', 'dist', 'index.html'))
-  );
-} else {
-  app.get('/', (req, res) => {
-    res.send('API is running...');
-  });
-}
 
 // Custom error handling middleware
 app.use(notFound);
